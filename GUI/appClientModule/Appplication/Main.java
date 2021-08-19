@@ -1,13 +1,11 @@
 package Appplication;
 
-import FileChooser.FileChooser;
+import TableFelix.SimpleTable;
 
 public class Main {
 	
 	public static void main(String[] args) {
-		FileChooser fileChosed = new FileChooser();
+		SimpleTable table = new SimpleTable();
 		System.out.println("*************************");
-		System.out.println(fileChosed.getFolderChoosed());
-		System.out.println(fileChosed.getFileChoosed()); 
 	}
 }
