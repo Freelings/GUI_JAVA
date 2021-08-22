@@ -14,9 +14,5 @@ public class FelixTable extends DefaultTableModel {
     public boolean isCellEditable(int row,int column){
 		return column == 0? false : true;
     }
-
-	public TableColumn getColumn(Object object) {
-		super.getColumn(object);
-	}
 	
 }

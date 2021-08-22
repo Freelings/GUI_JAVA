@@ -3,6 +3,8 @@ package Appplication;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import BoxGUIFixXYLocation.BoxGUIFixXYLocation;
+
 public class testGUI extends JFrame 
 {
 	/**
@@ -12,12 +14,7 @@ public class testGUI extends JFrame
 
 	public static void main(String [] args)
 	{
-		JFrame jf = new JFrame("test");
-		jf.setSize(300, 200);
-		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		jf.setVisible(true);
-		JPanel contentPanel = new JPanel();
-		jf.setContentPane(contentPanel);
+		BoxGUIFixXYLocation boxGUI = new BoxGUIFixXYLocation(920, 640);
 	}
 	
 }
