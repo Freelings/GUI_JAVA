@@ -3,10 +3,15 @@ package TableFelix;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
-public class FelixTable extends DefaultTableModel {
+public class FixedTable extends DefaultTableModel {
 	
 	
-	public FelixTable(Object[][] rowData, Object[] columnNames) {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7191350611887134383L;
+
+	public FixedTable(Object[][] rowData, Object[] columnNames) {
 		super(rowData, columnNames);
 	}
 

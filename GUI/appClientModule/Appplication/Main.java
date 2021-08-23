@@ -1,11 +1,11 @@
 package Appplication;
 
-import TableFelix.SimpleTable;
+import TableFelix.NewEditorDropsTable;
 
 public class Main {
 	
 	public static void main(String[] args) {
-		SimpleTable table = new SimpleTable();
+		NewEditorDropsTable table = new NewEditorDropsTable();
 		System.out.println("*************************");
 	}
 }
