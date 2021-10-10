@@ -26,54 +26,54 @@ public class BoxGUIFixGridBagLayout extends JFrame {
     	JPanel mainPanel = new JPanel();
 
         /*
-         * Éú³É´°ÌåÖĞµÄ¸÷ÖÖ×é¼ş
+         * ç”Ÿæˆçª—ä½“ä¸­çš„å„ç§ç»„ä»¶
          */
-//        ImageIcon imageQQ =new ImageIcon(this.getClass().getResource("QQÃæ°å.png"));
+//        ImageIcon imageQQ =new ImageIcon(this.getClass().getResource("QQé¢æ¿.png"));
         JLabel component1=new JLabel();
-        //×é¼ş1 ÊÇ½çÃæÉÏµÄQQÀ¶É«Ãæ°åÍ¼Ïñ£¬Í¼ÏñÎÒÃÇ°ÑËü·ÅÔÚJLabelÀà¶ÔÏóÉÏ
-//        ImageIcon imageqq =new ImageIcon(this.getClass().getResource("QQÍ·Ïñ.png"));
+        //ç»„ä»¶1 æ˜¯ç•Œé¢ä¸Šçš„QQè“è‰²é¢æ¿å›¾åƒï¼Œå›¾åƒæˆ‘ä»¬æŠŠå®ƒæ”¾åœ¨JLabelç±»å¯¹è±¡ä¸Š
+//        ImageIcon imageqq =new ImageIcon(this.getClass().getResource("QQå¤´åƒ.png"));
         JLabel component2=new JLabel();
-        //×é¼ş2 ÊÇ½çÃæÉÏµÄQQÆó¶ìÍ¼Ïñ£¬Í¬ÀíÍ¼ÏñÎÒÃÇ°ÑËü·ÅÔÚJLabelÀà¶ÔÏóÉÏ
+        //ç»„ä»¶2 æ˜¯ç•Œé¢ä¸Šçš„QQä¼é¹…å›¾åƒï¼ŒåŒç†å›¾åƒæˆ‘ä»¬æŠŠå®ƒæ”¾åœ¨JLabelç±»å¯¹è±¡ä¸Š
         JTextField component3=new JTextField();
         component3.setBorder(BorderFactory.createLineBorder(Color.BLUE));
-        //×é¼ş3ÊÇÓÃ»§µÄÕËºÅÊäÈë¿ò
-        JLabel component4=new JLabel("ÓÃ»§ÕËºÅ");
+        //ç»„ä»¶3æ˜¯ç”¨æˆ·çš„è´¦å·è¾“å…¥æ¡†
+        JLabel component4=new JLabel("ç”¨æˆ·è´¦å·");
         component4.setBorder(BorderFactory.createLineBorder(Color.GREEN));
-        //×é¼ş4ÊÇÓÃ»§µÄÕËºÅÊäÈë¿òÓÒ±ßµÄÌáÊ¾±êÇ©
+        //ç»„ä»¶4æ˜¯ç”¨æˆ·çš„è´¦å·è¾“å…¥æ¡†å³è¾¹çš„æç¤ºæ ‡ç­¾
         JTextField component5=new JTextField();
         component5.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-        //×é¼ş5ÊÇÓÃ»§µÄÃÜÂëÊäÈë¿ò
-        JLabel component6=new JLabel("ÓÃ»§ÃÜÂë");
+        //ç»„ä»¶5æ˜¯ç”¨æˆ·çš„å¯†ç è¾“å…¥æ¡†
+        JLabel component6=new JLabel("ç”¨æˆ·å¯†ç ");
         component6.setBorder(BorderFactory.createLineBorder(Color.RED));
-        //×é¼ş6ÊÇÓÃ»§µÄÃÜÂëÊäÈë¿òÓÒ±ßµÄÌáÊ¾±êÇ©
-        JCheckBox component7=new JCheckBox("¼Ç×¡ÃÜÂë");
-        //×é¼ş7ÊÇÓÃ»§µÄ¡°¼Ç×¡ÃÜÂë¡±µÄ¹´Ñ¡¼ü
-        JCheckBox component8=new JCheckBox("×Ô¶¯µÇÂ¼");
-        //×é¼ş8ÊÇÓÃ»§µÄ¡°×Ô¶¯µÇÂ¼¡±µÄ¹´Ñ¡¼ü
-        JButton component9=new JButton("°²È«µÇÂ¼");
+        //ç»„ä»¶6æ˜¯ç”¨æˆ·çš„å¯†ç è¾“å…¥æ¡†å³è¾¹çš„æç¤ºæ ‡ç­¾
+        JCheckBox component7=new JCheckBox("è®°ä½å¯†ç ");
+        //ç»„ä»¶7æ˜¯ç”¨æˆ·çš„â€œè®°ä½å¯†ç â€çš„å‹¾é€‰é”®
+        JCheckBox component8=new JCheckBox("è‡ªåŠ¨ç™»å½•");
+        //ç»„ä»¶8æ˜¯ç”¨æˆ·çš„â€œè‡ªåŠ¨ç™»å½•â€çš„å‹¾é€‰é”®
+        JButton component9=new JButton("å®‰å…¨ç™»å½•");
         component9.setBorder(BorderFactory.createLineBorder(Color.YELLOW));
-        //×é¼ş8ÊÇÓÃ»§µÄ¡°°²È«µÇÂ¼¡±µÄ°´¼ü
+        //ç»„ä»¶8æ˜¯ç”¨æˆ·çš„â€œå®‰å…¨ç™»å½•â€çš„æŒ‰é”®
         /*
-         * ¶Ô´°Ìå½øĞĞ²¼¾Ö
+         * å¯¹çª—ä½“è¿›è¡Œå¸ƒå±€
          */
-        GridBagLayout gridBagLayout=new GridBagLayout(); //ÊµÀı»¯²¼¾Ö¶ÔÏó
-        mainPanel.setLayout(gridBagLayout);//mainPanel´°Ìå¶ÔÏóÉèÖÃÎªGridBagLayout²¼¾Ö                
-        GridBagConstraints gridBagConstraints=new GridBagConstraints();//ÊµÀı»¯Õâ¸ö¶ÔÏóÓÃÀ´¶Ô×é¼ş½øĞĞ¹ÜÀí
-        gridBagConstraints.fill=GridBagConstraints.BOTH;//¸Ã·½·¨ÊÇÎªÁËÉèÖÃÈç¹û×é¼şËùÔÚµÄÇøÓò±È×é¼ş±¾ÉíÒª´óÊ±µÄÏÔÊ¾Çé¿ö 
-        //NONE£º²»µ÷Õû×é¼ş´óĞ¡¡£ 
-        //HORIZONTAL£º¼Ó¿í×é¼ş£¬Ê¹ËüÔÚË®Æ½·½ÏòÉÏÌîÂúÆäÏÔÊ¾ÇøÓò£¬µ«ÊÇ²»¸Ä±ä¸ß¶È¡£ 
-        //VERTICAL£º¼Ó¸ß×é¼ş£¬Ê¹ËüÔÚ´¹Ö±·½ÏòÉÏÌîÂúÆäÏÔÊ¾ÇøÓò£¬µ«ÊÇ²»¸Ä±ä¿í¶È¡£ 
-        //BOTH£ºÊ¹×é¼şÍêÈ«ÌîÂúÆäÏÔÊ¾ÇøÓò¡£ 
+        GridBagLayout gridBagLayout=new GridBagLayout(); //å®ä¾‹åŒ–å¸ƒå±€å¯¹è±¡
+        mainPanel.setLayout(gridBagLayout);//mainPanelçª—ä½“å¯¹è±¡è®¾ç½®ä¸ºGridBagLayoutå¸ƒå±€                
+        GridBagConstraints gridBagConstraints=new GridBagConstraints();//å®ä¾‹åŒ–è¿™ä¸ªå¯¹è±¡ç”¨æ¥å¯¹ç»„ä»¶è¿›è¡Œç®¡ç†
+        gridBagConstraints.fill=GridBagConstraints.BOTH;//è¯¥æ–¹æ³•æ˜¯ä¸ºäº†è®¾ç½®å¦‚æœç»„ä»¶æ‰€åœ¨çš„åŒºåŸŸæ¯”ç»„ä»¶æœ¬èº«è¦å¤§æ—¶çš„æ˜¾ç¤ºæƒ…å†µ 
+        //NONEï¼šä¸è°ƒæ•´ç»„ä»¶å¤§å°ã€‚ 
+        //HORIZONTALï¼šåŠ å®½ç»„ä»¶ï¼Œä½¿å®ƒåœ¨æ°´å¹³æ–¹å‘ä¸Šå¡«æ»¡å…¶æ˜¾ç¤ºåŒºåŸŸï¼Œä½†æ˜¯ä¸æ”¹å˜é«˜åº¦ã€‚ 
+        //VERTICALï¼šåŠ é«˜ç»„ä»¶ï¼Œä½¿å®ƒåœ¨å‚ç›´æ–¹å‘ä¸Šå¡«æ»¡å…¶æ˜¾ç¤ºåŒºåŸŸï¼Œä½†æ˜¯ä¸æ”¹å˜å®½åº¦ã€‚ 
+        //BOTHï¼šä½¿ç»„ä»¶å®Œå…¨å¡«æ»¡å…¶æ˜¾ç¤ºåŒºåŸŸã€‚ 
         /*
-         * ·Ö±ğ¶Ô×é¼ş½øĞĞÉèÖÃ
+         * åˆ†åˆ«å¯¹ç»„ä»¶è¿›è¡Œè®¾ç½®
          */
-        //×é¼ş1(gridx,gridy)×é¼şµÄ×óÉÏ½Ç×ø±ê£¬gridwidth£¬gridheight£º×é¼şÕ¼ÓÃµÄÍø¸ñĞĞÊıºÍÁĞÊı
+        //ç»„ä»¶1(gridx,gridy)ç»„ä»¶çš„å·¦ä¸Šè§’åæ ‡ï¼Œgridwidthï¼Œgridheightï¼šç»„ä»¶å ç”¨çš„ç½‘æ ¼è¡Œæ•°å’Œåˆ—æ•°
         gridBagConstraints.gridx=0;
         gridBagConstraints.gridy=0;
         gridBagConstraints.gridwidth=4;                                             
         gridBagConstraints.gridheight=4;            
         gridBagLayout.setConstraints(component1, gridBagConstraints);
-        //×é¼ş2
+        //ç»„ä»¶2
         gridBagConstraints.gridx=0;
         gridBagConstraints.gridy=4;
         gridBagConstraints.gridwidth=1;                                             
@@ -122,8 +122,9 @@ public class BoxGUIFixGridBagLayout extends JFrame {
         gridBagConstraints.gridheight=1;            
         gridBagLayout.setConstraints(component9, gridBagConstraints);
         
+        System.out.println("Enter BoxGUIFixGridBagLayout");
         /*
-         * ´°ÌåµÄ»ù±¾ÉèÖÃ
+         * çª—ä½“çš„åŸºæœ¬è®¾ç½®
          */
         JFrame jf=new JFrame();
 //        jf.setSize(450,300);
@@ -133,7 +134,7 @@ public class BoxGUIFixGridBagLayout extends JFrame {
         jf.setLayout(null);     
 //        jf.setResizable(false);
         /*
-         * °ÑËùÓĞ×é¼ş¼ÓÈëjf´°Ìå¶ÔÏóÖĞÈ¥
+         * æŠŠæ‰€æœ‰ç»„ä»¶åŠ å…¥jfçª—ä½“å¯¹è±¡ä¸­å»
          */
         mainPanel.add(component1);
         mainPanel.add(component2);

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="test" default="sayBaseDir" basedir="GUI">
+
+    <property name="parameter1" value="1"/> 
+    <property name="parameter2" value="2"/> 
+
+    <target name="sayHelloWorld">
+        <description> the first step in any languages</description>
+        <echo message="Hello, Felix"/>
+
+        <property name="name" value="Felix"/> 
+        <property name="age" value="26"/> 
+        <echo message="name: ${name}, age: ${age}"/> 
+
+    </target> 
+
+    <target name="sayBaseDir" depends="sayHelloWorld">
+        <echo message="The base dir is: ${basedir}"/>
+        <echo message="parameter1: ${parameter1}, parameter2: ${parameter2}"/> 
+    </target>
+</project>
