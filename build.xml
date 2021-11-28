@@ -15,7 +15,10 @@
             <classpath>
                 <pathelement path="build/classes"/>
             </classpath>
-        </java>    
+        </java>
+
+        <exec dir="build/classes/BoxGUIFixGridBagLayout" executable="cmd java BoxGUIFixGridBagLayout.BoxGUIFixGridBagLayout" output="log.log">
+        </exec>  
     </target>
 
     <target name="jar" depends="run">
